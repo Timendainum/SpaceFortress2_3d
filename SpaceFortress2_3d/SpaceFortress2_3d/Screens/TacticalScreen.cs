@@ -9,16 +9,16 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using SpaceFortress2.Screens;
+using SpaceFortress2.Screens.Overlays;
 using ThreeDWindowsGameLibrary.Actors;
 using ThreeDWindowsGameLibrary.Actors.Materials;
 using ThreeDWindowsGameLibrary.Cameras;
 using ThreeDWindowsGameLibrary.ScreenManagement;
 using ThreeDWindowsGameLibrary.Simulation;
-using SpaceFortress2.Screens.Overlays;
 
 namespace SpaceFortress2
 {
-	public class PlayGameScreen : GameScreen, ICameraEnabledGameScreen, IContentManagerScreen
+	public class TacticalScreen : GameScreen, ICameraEnabledGameScreen, IContentManagerScreen
 	{
 		private const float CAMERA_MOVE_FACTOR = 0.005f;
 		ContentManager Content;
@@ -76,7 +76,7 @@ namespace SpaceFortress2
 
 			//set up game state
 
-			foreach (Entity e in GameStateManager.GameManager.Entities)
+			foreach (Entity e in GameStateManager.GameManager.EntityManager.Entities)
 			{
 				Actors.Add(new BasicActor(e, screenContentManager.GetModel(e.Name)));
 			}
