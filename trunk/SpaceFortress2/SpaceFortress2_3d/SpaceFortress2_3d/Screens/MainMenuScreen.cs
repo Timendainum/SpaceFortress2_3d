@@ -46,7 +46,7 @@ namespace SpaceFortress2.Screens
 		{
 			GameStateManager.StartGame();
 
-			LoadingScreen.Load(ScreenManager, true, new PlayGameScreen());
+			LoadingScreen.Load(ScreenManager, true, new TacticalScreen());
 		}
 
 

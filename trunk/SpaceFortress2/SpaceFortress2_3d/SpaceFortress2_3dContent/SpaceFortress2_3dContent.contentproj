@@ -41,7 +41,6 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Compile Include="Fonts\kootenay14.spritefont">
       <Name>kootenay14</Name>

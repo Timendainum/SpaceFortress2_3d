@@ -1,6 +1,6 @@
 using System;
 
-namespace SpaceFortress2_3d
+namespace SpaceFortress2
 {
 #if WINDOWS || XBOX
     static class Program
@@ -10,7 +10,7 @@ namespace SpaceFortress2_3d
         /// </summary>
         static void Main(string[] args)
         {
-            using (SpaceFortress2 game = new SpaceFortress2())
+            using (SpaceFortress2Game game = new SpaceFortress2Game())
             {
                 game.Run();
             }

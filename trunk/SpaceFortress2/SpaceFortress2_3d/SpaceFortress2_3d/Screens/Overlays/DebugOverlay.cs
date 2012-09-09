@@ -13,11 +13,11 @@ namespace SpaceFortress2.Screens.Overlays
 		private float fps;
 		private float ups;
 		private Vector2 mousePosition;
-		private PlayGameScreen _screen;
+		private TacticalScreen _screen;
 		float elapsed;
 
 
-		public DebugOverlay(PlayGameScreen screen)
+		public DebugOverlay(TacticalScreen screen)
 			: base((GameScreen)screen)
 		{
 			_screen = screen;

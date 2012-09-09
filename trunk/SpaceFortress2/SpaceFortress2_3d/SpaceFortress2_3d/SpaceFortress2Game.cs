@@ -8,7 +8,7 @@ namespace SpaceFortress2
 	/// <summary>
 	/// This is the main type for your game
 	/// </summary>
-	public class SpaceFortress2 : Game
+	public class SpaceFortress2Game : Game
 	{
 		#region Fields
 
@@ -32,7 +32,7 @@ namespace SpaceFortress2
 		/// <summary>
 		/// The main game constructor.
 		/// </summary>
-		public SpaceFortress2()
+		public SpaceFortress2Game()
 		{
 			RandomManager.Init();
 
