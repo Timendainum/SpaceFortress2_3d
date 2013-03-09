@@ -14,8 +14,6 @@ namespace GameLogicLibrary.Simulation
 		World world;
 		GameEntityManager entityManager;
 
-
-
 		public GameEntityManager EntityManager
 		{
 			get
