@@ -112,7 +112,7 @@ namespace SpaceFortress2.Screens
             // method, rather than in Update, because it isn't enough just for the
             // screens to be gone: in order for the transition to look good we must
             // have actually drawn a frame without them before we perform the load.
-            if ((ScreenState == ScreenState.Active) &&
+            if ((ScreenState == EScreenState.Active) &&
                 (ScreenManager.GetScreens().Length == 1))
             {
                 otherScreensAreGone = true;
